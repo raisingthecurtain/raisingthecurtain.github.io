@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RAISING THE CURTAIN</title>
+  <!-- <link rel="icon" type="image/x-icon" href="./assets/cake-logo.png"> -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Import Raleway font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<script defer src="script.js"></script>
+
+<body>
+
+  <!--
+    Hi Scholars! \(^ v ^ )
+
+    FORK THIS REPL BEFORE EDITING. Please feel free to customize this page however you would like, and add/delete anything! This template is just a launch pad to get you started. Good luck on your project! It will be incredible <3
+  
+    Some suggested steps:
+    * Change the page name in the <title></title> tags above!
+    * Read through the comments to get a feel for the layout of the code (in this .html file and in the .css file!)
+    * Change the text first, add decorations after!
+
+    Other cool features:
+    A) Add a favicon:
+      1. Uncomment line 8 to see an example favicon appear on the browser tab!
+      2. Upload an image to the "assets" folder (in the left bar)
+      3. Replace "cake-logo.png" with the name of your image!
+
+    B) Create a dropdown menu 🍔
+      1. Check out this resource! https://www.w3schools.com/css/css_dropdowns.asp
+  -->
+
+  <!-- NAV BAR 
+  reference: https://www.w3schools.com/css/css_navbar.asp -->
+
+  <div class="curtain">
+    <!-- <img src = "./assets/closedCurtains.jpeg" alt = "Theater Curtain" class = "curtain"> -->
+  </div>
+
+  <div class="reveal-main"></div>
+  <div class="main">
+
+    <ul class="nav">
+
+      <div class="nav-logo">
+        <li><a href="#home" class="title">RAISING THE CURTAIN</a></li>
+      </div>
+
+      <div class="nav-links">
+        <li><a href="#section2">mission</a></li>
+        <li><a href="#section3">statistics</a></li>
+        <li><a href="#section4">support</a></li>
+        <li><a href="#section5">about</a></li>
+      </div>
+
+    </ul>
+
+    <!-- 1. HOME SECTION -->
+
+
+    <!-- Photo by Yosuke Ota on Unsplash -->
+    <img src="./assets/hollywood-sign.png" alt="Hollywood Sign" class="home-img" id="home">
+
+    <!-- 2. MISSION SECTION -->
+    <div class="section2" id="section2">
+      <div class="section2-text">
+        <section class="hidden">
+          <h2>problem statement</h2>
+
+          <p>Since the early 20th century, minorities have been underrepresented in the Hollywood film industry due to a
+            sense of familiarity towards white, male actors, resulting in less diversity and more white-led motion
+            pictures. Only <i><b>20%</b></i> of Oscar winners in the past decade were awarded to people of color.</p>
+
+
+          <h2>harmful effects on minorities</h2>
+
+          <p>Not only does the lack of diversity deter non-white actors and actresses from breaking into the industry,
+            but it also determines how people view minorities, which may include negative stereotypes. As a result,
+            people of color have less of a chance to share their culture and stories through motion pictures.</p>
+          <b></b>
+          <p>Furthermore, movie studios such as Marvel and DC have many cases of whitewashing their own characters in
+            movies. One popular example is Wanda Maximoff, who is originally Romani in the comics but is portrayed by
+            Elizabeth Olsen, a white actress. Another wide-known example is Ra's al Ghul from Christopher Nolan's Batman
+            trilogy. Although he is described as Arabic in the comics, he is represented in the live-action by Liam
+            Neeson, another white actor.</p>
+        </section>
+      </div>
+      <center>
+        <div class="container">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="/assets/hiddenFigures.jpg"></div>
+              <div class="swiper-slide"><img src="/assets/everythingeverywhere.png"></div>
+              <div class="swiper-slide"><img src="/assets/naatu-naatu-1676666264.png"></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
+        </div>
+        <p><i>Hidden Figures</i>, <i>Everything Everywhere All At Once</i>, <i>RRR</i></p>
+      </center>
+    </div>
+
+
+
+    <!-- 3. STATS SECTION -->
+    <div class="section3" id="section3">
+
+      <div class="section3-text">
+        <section class="hidden">
+          <h2>disparity within award shows</h2>
+
+          <p>In a census conducted on all nominations in the Oscars from 1928 to 2020, an estimated <mark>6%</mark>  of winners were
+            people of color, while the rest predominantly consisted of white individuals.</p>
+
+          <p>Moreover, men were nominated <mark>four times as much</mark> as women in the Oscars, which includes categories such as
+            Best Director, Writing, and Production Design.</p>
+
+      </div>
+      </section>
+      <div class="graph-section" id="graph-section">
+        <!-- Total Nominations Graph by Race -->
+        <center><iframe width="500" height="350"
+            src="https://lookerstudio.google.com/embed/reporting/fb20eaff-cf6a-44cd-bcb1-566395cf9b66/page/940ZD"
+            frameborder="0" style=border:"0" allowfullscreen></iframe></center>
+        
+      </div>
+
+      <div class = "pie-text">
+        <section class="hidden">
+          <p>There was a <mark>greater disparity</mark> in major award categories when comparing to
+            their support roles. For example, Black women won <mark>9.52%</mark> of awards in the Best Actress in a Support Role category, but they only won <mark>1.08%</mark> of awards in the Best Actress category. This could entail that leading roles tended to be given to white individuals rather than people of color.</p>
+      </div>
+        </section>
+      
+      <div class="pie-section1" id="pie-section1">
+        <right><iframe src="./graphs/best_actor.html" height="450" width="550" frameborder="0" style=border:"0"
+            allowfullscreen></iframe></right>
+        <right><iframe src="./graphs/best_actress.html" height="450" width="550" frameborder="0" style=border:"0"
+            allowfullscreen></iframe></right>
+      </div>
+
+      <div class="pie-section2" id="pie-section2">
+        <right><iframe src="./graphs/male_support.html" height="450" width="550" frameborder="0" style=border:"0"
+            allowfullscreen></iframe></right>
+        <right><iframe src="./graphs/fem_support.html" height="450" width="550" frameborder="0" style=border:"0"
+            allowfullscreen></iframe></right>
+      </div>
+
+      <div class = "line-text">
+        <section class="hidden">
+          <p>From 1928-2020, the amount of female winners each year were <mark><15</mark>.In addition, every race, other than white, won <mark><10</mark> awards each year. These statistics were consistent for more than <mark>nine decades</mark>.</p>
+      </div>
+        </section>
+      
+      <div class="graph-section1" id="graph-section1">
+        <left><iframe src="./graphs/gender_time.html" height="500" width="600" frameborder="0" style=border:"0"
+            allowfullscreen></left></iframe>
+      </div>
+      
+      <div class="graph-section2" id="graph-section2">
+        <right><iframe src="./graphs/wins_time.html" height="500" width="600" frameborder="0" style=border:"0"
+            allowfullscreen></iframe></right>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. SUPPORT SECTION -->
+  <div class="section4">
+    <div class="section4-text" id="section4">
+      <section class="hidden">
+        <h2>go further</h2>
+
+        <p>We are the future, and it is up to us and our generation to actively make a change in the film industry. Check
+          out the links below to see how you can join and get involved with film. We hope to provide resources through incentives and donation platforms.</p>
+
+        <ul>
+          <li>
+            <a href="https://womeninfilm.org/fellowships/">Women In Film Fellowship</a>
+            <p>The Women in Film organization strives to get more women into the film industry, whether it be working on
+              screen or behind the scenes. In this year-long fellowship, participants (producers, crew, directors, and
+              so much more) will have the opportunity to meet with mentors in their field. </p>
+          </li>
+          <li>
+            <a href="https://againstthegrainproductions.com/atg-artistic-scholarship/">Against the Grain Artistic
+              Scholarship</a>
+            <p> The Against the Grain Artistic Scholarship is a scholarship that provides academic aid exclusively for those of at least 25% Asian
+              or Pacific Islander descent who want to pursue a major in film.
+              This scholarship is currently not open as of August 2023, but we highly recommend checking back in January
+              2024 when the applications open.</p>
+          </li>
+          <li>
+            <a href="https://islamicscholarshipfund.org/film-scholarship/">Islamic Scholarship Fund</a>
+            <p>The Islamic Scholarship Fund is an organization that aims to enter more American Muslims into the film
+              and television industry by providing scholarships that range from $3,000 to $5,000. Although the
+              applications for the scholarship are currently closed 2023, it will re-open for 2024.</p>
+          </li>
+          <li>
+            <a href="https://www.nywift.org/fiscal-sponsorship-program/">New York Women in Film and Television</a>
+            <p>The New York Women in Film and Television (NYWIFT) scholarship aims to help women in the New York film
+              community gain access to government and foundation funding for film projects. There is no application fee
+              to apply, but in order to apply you do have to be a member of the NYWIFT. The applications are always
+              open.</p>
+            <p>_______________________________________________________________________________________________________
+            </p>
+          </li>
+          <li>
+            <p> If you are not eligible for the resources above, there is still so much you can do
+              to get involved and make a change.
+
+            <ol>
+              <li>Write a letter to The Academy of Motion Picture Arts and Sciences emphasizing the need for change.
+              </li>
+              <li>Educate others on the issue and share this website!
+            </ol>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+  </div>
+
+
+
+  <!-- 5. ABOUT SECTION -->
+  <section class="hidden">
+    <div class="section5" id="section5">
+
+      <h2>about us</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Alexa Leahy</h3>
+          <p>Alexa is a rising sophomore and has been a part of the KWK community since 2022 where she took part in the
+            web design program. In her free time, Alexa loves listening to music and going on walks.</p>
+        </div>
+        <div class="card">
+          <h3>Emily An</h3>
+          <p>Emily is a rising junior and has been with KWK since 2021, where she learned Web Development, App
+            Development, and Data Science. She enjoys playing badminton with her family.</p>
+        </div>
+        <div class="card">
+          <h3>Tiffany Qiu</h3>
+          <p>Tiffany is a rising senior, and this is her first year doing KWK Data Science camp in 2023, learning Python
+            and SQL. She loves to listen to music and run in her free time.</p>
+
+        </div>
+      </div>
+
+  </section>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+
+      },
+
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Manrope', sans-serif;;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14pt;
+  background-color: #FFE9BA;
+}
+
+h2 {
+  font-size: 36pt;
+}
+
+p {
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #610907;
+  font-size: 17pt;
+}
+
+/* NAV BAR */
+
+.nav {
+  position: sticky;
+  list-style-type: none;
+  background-color: #dc5e2f;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  height: 88px;
+  z-index: 500
+}
+
+.nav li {
+  color: black;
+  font-size: 14pt;
+  padding: 5px 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav li a:hover {
+  color: #892A2B;
+  cursor: pointer;
+}
+
+.nav-logo {
+  display: block;
+  float: left;
+  margin-top: 30px; 
+  font-size:45px;
+  font-family: 'Limelight', cursive;
+}
+
+.nav-links {
+  float: right;
+  margin-top: 30px;
+  margin-bottom:50px;
+}
+
+/* 1. HOME SECTION */
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 60pt;
+  margin-top: 10%;
+}
+
+.home-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin: 10;
+  padding: 10;
+  width: 100%;
+  height: 90%
+}
+
+/* 2. MISSION SECTION */
+
+.section2 {
+  display: block;
+  margin: 38% 0 0% 0;
+  height: 60%;
+  padding: 10% 10%;
+}
+
+.section2-text {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* 3. STATS SECTION */
+
+mark { 
+  background-color: #610907;
+  color:#f1bb83;
+}
+.section3 {
+  display: block;
+  background-color: #842A2A;
+  padding: 10% 21%;
+  color:#f1bb83;
+  margin-bottom: 50px;
+}
+
+.section3 img {
+  margin: 35px 10px;
+}
+
+.total-Noms {
+  position:static;
+  float:left;
+}
+
+/* Graph Section */
+/*.graph-section {
+  display:block;
+  background-color: red;
+  
+}*/
+
+/* 4. SUPPORT SECTION */
+
+.section4 {
+  margin: 0 0;
+}
+
+.section4-text {
+  text-align: left;
+  padding:100px;
+}
+
+.section4-text ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.section4-text ul li p:first-of-type {
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+/* ABOUT SECTION */
+
+.section5 {
+ /* display: block;
+  margin: 15% 10%;
+  padding-bottom: 100px;
+  padding-top: 1px;
+  background-color: #CD663D;*/
+
+  display: block;
+  background-color: #CD663D;
+  padding: 2% 2%;
+  color: #f1bb83;
+}
+
+.cards {
+  display: inline-flex;
+}
+
+.card {
+  margin: 25px
+}
+
+.title {
+  font-size:38px !important;
+}
+
+/* Scrolling Animation */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.pie-section1 {
+  /* border-style:dotted; */
+  margin-left: -120px;
+  margin-right: 200px;
+}
+.pie-section2 {
+  /* border-style:dotted; */
+  margin-top: -961px;
+  margin-right: -200px;
+  margin-left: 325px;
+  padding: 50px;
+  align-items: right;
+  flex-wrap: wrap;
+  display:flex;
+  position:static;
+}
+
+.graph-section1 {
+  /* border-style: dotted; */
+  margin-left: -200px;
+  margin-top: 0px;
+  /*
+  margin-right: 400px;
+  border-style: dotted;
+  align-items: left;
+  flex-wrap:wrap;
+  display: flex;
+  position: static; */
+}
+
+.graph-section2 {
+  /* border-style: dotted; */
+  margin-top: -555px;
+  margin-right: -220px;
+  margin-left: 400px;
+  padding: 50px;
+  align-items: right;
+  flex-wrap: wrap;
+  display:flex;
+  position:static;
+}
+
+/* Container */
+.container {
+  width:85%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+  /*background-color:#842A2A;
+  margin-bottom:20px;*/
+  margin-top:95px;
+}
+
+.swiper {
+  width: 80%;
+  height: fit-content;
+  
+}
+.swiper-slide img{
+  width: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+  color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+/* Curtain Effect */
+/* .curtain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1); 
+} 
+
+  .main{
+  position: fixed;
+  bottom:0;
+  height: 100%;
+  width: 100%;
+}
+
+.reveal-main{
+  height: 1000px;
+}
+
+.main {
+  text-align:center;
+  height: 100%;
+}
+
+.active {
+  position:relative;
+  margin-top:-6%;
+  margin-top:-118px;
+  height:100%;
+}
+
+.activetwo {
+  height:100%;
+  position:absolute;
+}
+  */
